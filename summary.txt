@@ -1,0 +1,18 @@
+Project Name：EatApp
+
+Description: This Java DeskTop Application enables user to search for beloved restaurant based on business name and city, the user interface (main page) is google search style, since we want it to be like a search engine for delicious food. User can also select the “discount” checkbox so as to see the restaurant what offers deal.
+Besides that, recommendation is supported in the application, it can be very useful when user have no idea where to go to have meals. In the detail page of each restaurant, we not only provide user with detail information, we also show the location in Google map.
+
+Work Breakdown:
+Yue Guan: implement front end, parse JSON formatted information from Yelp
+Liangjin Zhao: merge Yelp api caller into project, parse JSON formatted response, integrate with Google Map
+Ao Sun: integrate with Google Map API
+
+Github Repo: https://github.com/cit-upenn/594-s16-project-eatapp
+
+Project Requirements:
+-- Interface: we designed a business interface. If the project is extended later on, for example, if someone wants to add some other types of business such as hair salon, fitness center, or grocery store, an interface can enforce them to implement the required methods.
+-- Design Pattern: singleton design pattern is used. There should be only one YelpAPI instance, and it is shared by the whole project.
+-- Java Graphics: used in RestaurantButton class.
+-- Thread: used in multiple classes to load URL images and to switch advertisement images.
+-- Data Structure: Array, ArrayList.
